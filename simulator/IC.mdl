@@ -1,0 +1,688 @@
+Model {
+  Name			  "IC"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Apr 11 14:37:55 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "dsplab"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Apr 11 14:46:55 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "IC"
+    Location		    [2, 78, 1022, 748]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "IC"
+      Ports		      [10, 9]
+      Position		      [450, 161, 565, 414]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"IC"
+	Location		[182, 176, 552, 740]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IU"
+	  Position		  [75, 28, 105, 42]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IUstar"
+	  Position		  [70, 83, 100, 97]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IV"
+	  Position		  [75, 133, 105, 147]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IVstar"
+	  Position		  [80, 183, 110, 197]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IW"
+	  Position		  [80, 233, 110, 247]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IWstar"
+	  Position		  [80, 283, 110, 297]
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "UV"
+	  Position		  [80, 333, 110, 347]
+	  Port			  "7"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VW"
+	  Position		  [80, 393, 110, 407]
+	  Port			  "8"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "WU"
+	  Position		  [85, 448, 115, 462]
+	  Port			  "9"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "THRESHOLD"
+	  Position		  [25, 483, 55, 497]
+	  Port			  "10"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [85, 510, 115, 540]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [200, 30, 230, 60]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  Position		  [200, 85, 230, 115]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  Position		  [200, 135, 230, 165]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch3"
+	  Position		  [200, 185, 230, 215]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch4"
+	  Position		  [200, 235, 230, 265]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch5"
+	  Position		  [200, 285, 230, 315]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch6"
+	  Position		  [200, 335, 230, 365]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch7"
+	  Position		  [205, 395, 235, 425]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch8"
+	  Position		  [205, 450, 235, 480]
+	  Threshold		  "T"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IU_out"
+	  Position		  [300, 38, 330, 52]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IUstar_out"
+	  Position		  [300, 93, 330, 107]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IV_out"
+	  Position		  [300, 143, 330, 157]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IVstar_out"
+	  Position		  [305, 193, 335, 207]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IW_out"
+	  Position		  [305, 243, 335, 257]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IWstar_out"
+	  Position		  [305, 293, 335, 307]
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "UV_out"
+	  Position		  [310, 343, 340, 357]
+	  Port			  "7"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VW_out"
+	  Position		  [310, 403, 340, 417]
+	  Port			  "8"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "WU_out"
+	  Position		  [315, 458, 345, 472]
+	  Port			  "9"
+	}
+	Line {
+	  SrcBlock		  "IU"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IUstar"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IV"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IVstar"
+	  SrcPort		  1
+	  DstBlock		  "Switch3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IW"
+	  SrcPort		  1
+	  DstBlock		  "Switch4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IWstar"
+	  SrcPort		  1
+	  DstBlock		  "Switch5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "UV"
+	  SrcPort		  1
+	  DstBlock		  "Switch6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VW"
+	  SrcPort		  1
+	  DstBlock		  "Switch7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "WU"
+	  SrcPort		  1
+	  DstBlock		  "Switch8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -50]
+	  Branch {
+	    Points		    [35, 0]
+	    DstBlock		    "Switch8"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, -55]
+	    Branch {
+	      Points		      [35, 0]
+	      DstBlock		      "Switch7"
+	      DstPort		      3
+	    }
+	    Branch {
+	      Points		      [0, -60]
+	      Branch {
+		Points			[30, 0]
+		DstBlock		"Switch6"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -50]
+		Branch {
+		  Points		  [30, 0]
+		  DstBlock		  "Switch5"
+		  DstPort		  3
+		}
+		Branch {
+		  Points		  [0, -50]
+		  Branch {
+		    Points		    [30, 0]
+		    DstBlock		    "Switch4"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, -50]
+		    Branch {
+		    Points		    [30, 0]
+		    DstBlock		    "Switch3"
+		    DstPort		    3
+		    }
+		    Branch {
+		    Points		    [0, -50]
+		    Branch {
+		    Points		    [30, 0]
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		    }
+		    Branch {
+		    Points		    [0, -50]
+		    Branch {
+		    Points		    [30, 0]
+		    DstBlock		    "Switch1"
+		    DstPort		    3
+		    }
+		    Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		    }
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "IU_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  DstBlock		  "IUstar_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  DstBlock		  "IV_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch3"
+	  SrcPort		  1
+	  DstBlock		  "IVstar_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch4"
+	  SrcPort		  1
+	  DstBlock		  "IW_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch5"
+	  SrcPort		  1
+	  DstBlock		  "IWstar_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch6"
+	  SrcPort		  1
+	  DstBlock		  "UV_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch7"
+	  SrcPort		  1
+	  DstBlock		  "VW_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch8"
+	  SrcPort		  1
+	  DstBlock		  "WU_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "THRESHOLD"
+	  SrcPort		  1
+	  Points		  [110, 0; 0, -25]
+	  Branch {
+	    Points		    [0, -55]
+	    Branch {
+	      Points		      [0, -60]
+	      Branch {
+		Points			[0, -50]
+		Branch {
+		  Points		  [0, -50]
+		  Branch {
+		    Points		    [0, -50]
+		    Branch {
+		    Points		    [0, -50]
+		    Branch {
+		    Points		    [0, -50]
+		    Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch3"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Switch4"
+		    DstPort		    2
+		  }
+		}
+		Branch {
+		  DstBlock		  "Switch5"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		DstBlock		"Switch6"
+		DstPort			2
+	      }
+	    }
+	    Branch {
+	      DstBlock		      "Switch7"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Switch8"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+  }
+}

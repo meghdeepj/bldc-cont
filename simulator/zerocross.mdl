@@ -1,0 +1,947 @@
+Model {
+  Name			  "zerocross"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Apr 07 20:41:24 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "dev"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Apr 08 23:41:47 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:13>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  "-aExtMode=0 -aForceParamTrailComments=0 -aInlineInv"
+"ariantSignals=0 -aLocalBlockOutputs=1 -aLogVarNameModifier=\"rt_\" -aRTWVerbo"
+"se=1 -aRollThreshold=5 -aShowEliminatedStatements=1"
+  RTWInlineParameters	  on
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "zerocross"
+    Location		    [4, 74, 1024, 752]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [2]
+      Position		      [605, 146, 635, 179]
+      Floating		      off
+      Location		      [5, 53, 1029, 771]
+      Open		      on
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5~-5"
+      YMax		      "5~5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [2]
+      Position		      [685, 191, 715, 224]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5~-5"
+      YMax		      "5~5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      Ports		      [2]
+      Position		      [780, 206, 810, 239]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5~-5"
+      YMax		      "5~5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave"
+      Position		      [235, 155, 265, 185]
+      Amplitude		      "1"
+      Frequency		      "10"
+      Phase		      "0"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave1"
+      Position		      [185, 190, 215, 220]
+      Amplitude		      "1"
+      Frequency		      "10"
+      Phase		      "2*pi/3"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave2"
+      Position		      [135, 225, 165, 255]
+      Amplitude		      "1"
+      Frequency		      "10"
+      Phase		      "-2*pi/3"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [300, 100, 320, 120]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [355, 65, 375, 85]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [405, 35, 425, 55]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "zero-cross"
+      Ports		      [3, 3]
+      Position		      [405, 149, 520, 261]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDescription	      "The block detects the zero crossing of the inpu"
+"ts. For accurate results use the  rising edge only."
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"zero-cross"
+	Location		[8, 74, 1012, 752]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "EU"
+	  Position		  [25, 78, 55, 92]
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "EV"
+	  Position		  [25, 118, 55, 132]
+	  Port			  "2"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "EW"
+	  Position		  [25, 173, 55, 187]
+	  Port			  "3"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [365, 145, 395, 175]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [370, 200, 400, 230]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [365, 385, 395, 415]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  Position		  [370, 440, 400, 470]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  Position		  [355, 610, 385, 640]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  Position		  [360, 665, 390, 695]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  Ports			  [2, 1]
+	  Position		  [500, 87, 530, 118]
+	  Operator		  "OR"
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  Ports			  [2, 1]
+	  Position		  [500, 327, 530, 358]
+	  Operator		  "OR"
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator2"
+	  Ports			  [2, 1]
+	  Position		  [490, 552, 520, 583]
+	  Operator		  "OR"
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "M-file S-Function"
+	  Ports			  [1, 1]
+	  Position		  [235, 59, 295, 101]
+	  FunctionName		  "sfundsc2"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	  MaskType		  "S-function: sfun_dsc2"
+	  MaskDescription	  "This is a M-file S-function which demonstra"
+"tes how toimplement an unit delay."
+	  MaskDisplay		  "disp('Unit delay')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "M-file S-Function1"
+	  Ports			  [1, 1]
+	  Position		  [255, 299, 315, 341]
+	  FunctionName		  "sfundsc2"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	  MaskType		  "S-function: sfun_dsc2"
+	  MaskDescription	  "This is a M-file S-function which demonstra"
+"tes how toimplement an unit delay."
+	  MaskDisplay		  "disp('Unit delay')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "M-file S-Function2"
+	  Ports			  [1, 1]
+	  Position		  [250, 524, 310, 566]
+	  FunctionName		  "sfundsc2"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	  MaskType		  "S-function: sfun_dsc2"
+	  MaskDescription	  "This is a M-file S-function which demonstra"
+"tes how toimplement an unit delay."
+	  MaskDisplay		  "disp('Unit delay')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [355, 56, 400, 89]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [355, 296, 400, 329]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [345, 521, 390, 554]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  Position		  [430, 67, 460, 98]
+	  Operator		  "<"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator1"
+	  Position		  [435, 157, 465, 188]
+	  Operator		  "=="
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator2"
+	  Position		  [430, 307, 460, 338]
+	  Operator		  "<"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator3"
+	  Position		  [435, 397, 465, 428]
+	  Operator		  "=="
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator4"
+	  Position		  [420, 532, 450, 563]
+	  Operator		  "<"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator5"
+	  Position		  [425, 622, 455, 653]
+	  Operator		  "=="
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [135, 75, 155, 95]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [135, 315, 155, 335]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [125, 540, 145, 560]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U-V"
+	  Position		  [655, 98, 685, 112]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V-W"
+	  Position		  [625, 338, 655, 352]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "W-U"
+	  Position		  [750, 563, 780, 577]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -5; 5, 0]
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Relational\nOperator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -50; 115, 0; 0, 35]
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "M-file S-Function"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "M-file S-Function"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -70]
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Relational\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "U-V"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "EU"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    DstBlock		    "Sum"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 490]
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "EV"
+	  SrcPort		  1
+	  Points		  [0, 0; 60, 0]
+	  Branch {
+	    Points		    [25, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 200]
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -5; 35, 0]
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Relational\nOperator3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [5, 0]
+	    Branch {
+	      Points		      [0, -50; 80, 0; 0, 35]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "M-file S-Function1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "M-file S-Function1"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -70]
+	  DstBlock		  "Relational\nOperator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Relational\nOperator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator2"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator3"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  DstBlock		  "V-W"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "EW"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 180; 30, 0]
+	  Branch {
+	    Points		    [30, 0]
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [-5, 0]
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -5; 35, 0]
+	  Branch {
+	    Points		    [5, 0]
+	    Branch {
+	      DstBlock		      "M-file S-Function2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -50; 80, 0; 0, 35]
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Relational\nOperator5"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "M-file S-Function2"
+	  SrcPort		  1
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -70]
+	  DstBlock		  "Relational\nOperator4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Relational\nOperator5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator4"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator5"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator2"
+	  SrcPort		  1
+	  DstBlock		  "W-U"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sine Wave"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"zero-cross"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	Branch {
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -75; 100, 0; 0, 35]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sine Wave1"
+      SrcPort		      1
+      Points		      [90, 0]
+      Branch {
+	DstBlock		"zero-cross"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -65]
+	Branch {
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [30, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sine Wave2"
+      SrcPort		      1
+      Points		      [195, 0]
+      Branch {
+	DstBlock		"zero-cross"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, -140]
+	Branch {
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [25, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "zero-cross"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [265, 0; 0, 40]
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [290, 0; 0, 120]
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "zero-cross"
+      SrcPort		      2
+      Points		      [145, 0]
+      DstBlock		      "Scope1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [325, 0; 0, 170]
+      DstBlock		      "Scope2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "zero-cross"
+      SrcPort		      3
+      Points		      [240, 0]
+      DstBlock		      "Scope2"
+      DstPort		      2
+    }
+  }
+}

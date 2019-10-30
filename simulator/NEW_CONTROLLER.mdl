@@ -1,0 +1,3655 @@
+Model {
+  Name			  "NEW_CONTROLLER"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Apr 14 00:21:37 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "dev"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Apr 14 01:01:44 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:6>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      ShowAdditionalParam     off
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "NEW_CONTROLLER"
+    Location		    [2, 74, 1014, 744]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "NEW_CONTROLLER"
+      Ports		      [9, 6]
+      Position		      [350, 175, 460, 325]
+      ForegroundColor	      "blue"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"NEW_CONTROLLER"
+	Location		[-8, 119, 757, 533]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IU"
+	  Position		  [165, 33, 195, 47]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IUstar"
+	  Position		  [120, 53, 150, 67]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IV"
+	  Position		  [75, 68, 105, 82]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IVstar"
+	  Position		  [30, 83, 60, 97]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IW"
+	  Position		  [25, 113, 55, 127]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IWstar"
+	  Position		  [70, 113, 100, 127]
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "UV"
+	  Position		  [110, 128, 140, 142]
+	  Port			  "7"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VW"
+	  Position		  [140, 143, 170, 157]
+	  Port			  "8"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "WU"
+	  Position		  [80, 158, 110, 172]
+	  Port			  "9"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "CONT_LOW"
+	  Ports			  [9, 6]
+	  Position		  [250, 239, 420, 391]
+	  ForegroundColor	  "blue"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Stateflow diagram"
+	  MaskDisplay		  "plot(sf('Private','sfblk','xIcon'),sf('Priv"
+"ate','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk', 'tIcon'),'Horizontal"
+"Al','Center','VerticalAl','Bottom');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "CONT_LOW"
+	    Location		    [257, 457, 812, 717]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IU"
+	      Position		      [20, 101, 40, 119]
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IUstar"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IV"
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IVstar"
+	      Position		      [20, 206, 40, 224]
+	      Port		      "4"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IW"
+	      Position		      [20, 246, 40, 264]
+	      Port		      "5"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IWstar"
+	      Position		      [20, 281, 40, 299]
+	      Port		      "6"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "UV"
+	      Position		      [20, 316, 40, 334]
+	      Port		      "7"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VW"
+	      Position		      [20, 351, 40, 369]
+	      Port		      "8"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "WU"
+	      Position		      [20, 386, 40, 404]
+	      Port		      "9"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 315, 320, 355]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function NEW_CONTROLLER 1"
+	      Ports		      [9, 7]
+	      Position		      [180, 109, 230, 311]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[9 7]"
+	      Port {
+		PortNumber		2
+		Name			"Tr1"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"Tr2"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"Tr3"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"Tr4"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"Tr5"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"Tr6"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 326, 480, 344]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr1"
+	      Position		      [460, 101, 480, 119]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr2"
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr3"
+	      Position		      [460, 171, 480, 189]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr4"
+	      Position		      [460, 206, 480, 224]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr5"
+	      Position		      [460, 246, 480, 264]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr6"
+	      Position		      [460, 281, 480, 299]
+	      Port		      "6"
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      Points		      [0, 215]
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IU"
+	      SrcPort		      1
+	      Points		      [120, 0]
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IUstar"
+	      SrcPort		      1
+	      Points		      [120, 0]
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "IV"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "IVstar"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "IW"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "IWstar"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "UV"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "VW"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "WU"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      9
+	    }
+	    Line {
+	      Name		      "Tr1"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "Tr1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr2"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "Tr2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr3"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "Tr3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr4"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      5
+	      DstBlock		      "Tr4"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr5"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      6
+	      DstBlock		      "Tr5"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr6"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      7
+	      DstBlock		      "Tr6"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "CONT_UP"
+	  Ports			  [9, 6]
+	  Position		  [245, 29, 415, 181]
+	  ForegroundColor	  "blue"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Stateflow diagram"
+	  MaskDisplay		  "plot(sf('Private','sfblk','xIcon'),sf('Priv"
+"ate','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk', 'tIcon'),'Horizontal"
+"Al','Center','VerticalAl','Bottom');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "CONT_UP"
+	    Location		    [257, 457, 812, 717]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IU"
+	      Position		      [20, 101, 40, 119]
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IUstar"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IV"
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IVstar"
+	      Position		      [20, 206, 40, 224]
+	      Port		      "4"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IW"
+	      Position		      [20, 246, 40, 264]
+	      Port		      "5"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IWstar"
+	      Position		      [20, 281, 40, 299]
+	      Port		      "6"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "UV"
+	      Position		      [20, 316, 40, 334]
+	      Port		      "7"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VW"
+	      Position		      [20, 351, 40, 369]
+	      Port		      "8"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "WU"
+	      Position		      [20, 386, 40, 404]
+	      Port		      "9"
+	      PortDimensions	      "1"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 315, 320, 355]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function NEW_CONTROLLER 2"
+	      Ports		      [9, 7]
+	      Position		      [180, 109, 230, 311]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[9 7]"
+	      Port {
+		PortNumber		2
+		Name			"Tr1"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"Tr2"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"Tr3"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"Tr4"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"Tr5"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"Tr6"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 326, 480, 344]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr1"
+	      Position		      [460, 101, 480, 119]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr2"
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr3"
+	      Position		      [460, 171, 480, 189]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr4"
+	      Position		      [460, 206, 480, 224]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr5"
+	      Position		      [460, 246, 480, 264]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tr6"
+	      Position		      [460, 281, 480, 299]
+	      Port		      "6"
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      Points		      [0, 215]
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IU"
+	      SrcPort		      1
+	      Points		      [120, 0]
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IUstar"
+	      SrcPort		      1
+	      Points		      [120, 0]
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "IV"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "IVstar"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "IW"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "IWstar"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "UV"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "VW"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "WU"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      9
+	    }
+	    Line {
+	      Name		      "Tr1"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "Tr1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr2"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "Tr2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr3"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "Tr3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr4"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      5
+	      DstBlock		      "Tr4"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr5"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      6
+	      DstBlock		      "Tr5"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Tr6"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      7
+	      DstBlock		      "Tr6"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  Ports			  [2, 1]
+	  Position		  [630, 39, 665, 61]
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  Ports			  [2, 1]
+	  Position		  [630, 89, 665, 111]
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator2"
+	  Ports			  [2, 1]
+	  Position		  [630, 149, 665, 171]
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator3"
+	  Ports			  [2, 1]
+	  Position		  [630, 204, 665, 226]
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator4"
+	  Ports			  [2, 1]
+	  Position		  [630, 264, 665, 286]
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator5"
+	  Ports			  [2, 1]
+	  Position		  [635, 329, 670, 351]
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tr1"
+	  Position		  [705, 43, 735, 57]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tr2"
+	  Position		  [705, 93, 735, 107]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tr3"
+	  Position		  [705, 153, 735, 167]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tr4"
+	  Position		  [705, 208, 735, 222]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tr5"
+	  Position		  [705, 268, 735, 282]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tr6"
+	  Position		  [710, 333, 740, 347]
+	  Port			  "6"
+	}
+	Line {
+	  SrcBlock		  "IU"
+	  SrcPort		  1
+	  Points		  [0, 5; 25, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "IUstar"
+	  SrcPort		  1
+	  Points		  [65, 0; 0, 10]
+	  Branch {
+	    Points		    [0, 200]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -10]
+	    DstBlock		    "CONT_UP"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IV"
+	  SrcPort		  1
+	  Points		  [0, 0; 105, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "IVstar"
+	  SrcPort		  1
+	  Points		  [0, 0; 145, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    4
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "IW"
+	  SrcPort		  1
+	  Points		  [0, -15; 145, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    5
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  SrcBlock		  "IWstar"
+	  SrcPort		  1
+	  Points		  [0, 0; 95, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    6
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  SrcBlock		  "UV"
+	  SrcPort		  1
+	  Points		  [0, 0; 50, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    7
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    7
+	  }
+	}
+	Line {
+	  SrcBlock		  "VW"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    8
+	  }
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    8
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "WU"
+	  SrcPort		  1
+	  Points		  [70, 0]
+	  Branch {
+	    DstBlock		    "CONT_UP"
+	    DstPort		    9
+	  }
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "CONT_LOW"
+	    DstPort		    9
+	  }
+	}
+	Line {
+	  SrcBlock		  "CONT_UP"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_LOW"
+	  SrcPort		  1
+	  Points		  [95, 0; 0, -200]
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Tr1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  DstBlock		  "Tr2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_UP"
+	  SrcPort		  2
+	  Points		  [195, 0]
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_LOW"
+	  SrcPort		  2
+	  Points		  [105, 0; 0, -175]
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator2"
+	  SrcPort		  1
+	  DstBlock		  "Tr3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_UP"
+	  SrcPort		  3
+	  Points		  [190, 0; 0, 60]
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_LOW"
+	  SrcPort		  3
+	  Points		  [115, 0; 0, -140]
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator3"
+	  SrcPort		  1
+	  DstBlock		  "Tr4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_UP"
+	  SrcPort		  4
+	  Points		  [75, 0; 0, 90]
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_LOW"
+	  SrcPort		  4
+	  Points		  [120, 0; 0, -110]
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator4"
+	  SrcPort		  1
+	  DstBlock		  "Tr5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_UP"
+	  SrcPort		  5
+	  Points		  [70, 0; 0, 90; 105, 0; 0, 35]
+	  DstBlock		  "Logical\nOperator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_LOW"
+	  SrcPort		  5
+	  Points		  [170, 0; 0, -75]
+	  DstBlock		  "Logical\nOperator4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator5"
+	  SrcPort		  1
+	  DstBlock		  "Tr6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_UP"
+	  SrcPort		  6
+	  Points		  [95, 0; 0, 165]
+	  DstBlock		  "Logical\nOperator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CONT_LOW"
+	  SrcPort		  6
+	  Points		  [190, 0; 0, -35]
+	  DstBlock		  "Logical\nOperator5"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}
+
+# Finite State Machines
+# -- File save dated 14-Apr-2004 01:01:45
+#
+#    Stateflow Version 5.0 (R13) dated Jun 21 2002, 09:11:50
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"NEW_CONTROLLER"
+		created              		"14-Apr-2004 00:21:58"
+		isLibrary            		0
+		firstTarget          		122
+		sfVersion            		50013001.000001
+	}
+
+	chart {
+		id                       		2
+		name                     		"NEW_CONTROLLER/CONT_LOW"
+		windowPosition           		[0 0 768 523.5]
+		viewLimits               		[0 905.625 752.219 1361.594]
+		zoomFactor               		1.25
+		screen                   		[1 1 1024 768 1.333333333333333]
+		treeNode                 		[0 3 0 0]
+		firstTransition          		21
+		viewObj                  		2
+		machine                  		1
+		subviewS {
+		}
+		decomposition            		CLUSTER_CHART
+		firstData                		46
+		updateMethod             		CONTINUOUS
+		sampleTime               		"0.0001"
+		debug                    		[1]
+		chartFileNumber          		1
+	}
+
+	state {
+		id                  		3
+		labelString         		"A/"
+		position            		[135.625 96.75 520.125 133.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 4 0 6]
+		firstTransition     		40
+		visible             		0
+		subviewer           		2
+		subviewS {
+			x1        		-11.335
+			y1        		-11.335
+			pos       		[0 0 520.125 133.875]
+		}
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		4
+		labelString         		"A1/\n"
+						"during: Tr1=0;Tr3=0;Tr4=0;\n"
+						"Tr2=0;Tr5=0;Tr6=0;"
+		position            		[184.5 113.625 154.125 97.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[3 0 0 5]
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		5
+		labelString         		"A2/\n"
+						"during: Tr1=0; Tr3=0; Tr4=0; Tr2=0; Tr5=0;\n"
+						"Tr6=1;"
+		position            		[401.5 114.75 238.719 94.594]
+		fontSize            		12
+		chart               		2
+		treeNode            		[3 0 4 0]
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		6
+		labelString         		"B/"
+		position            		[143.75 340.5 510.125 124.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 8 3 9]
+		firstTransition     		25
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		7
+		labelString         		"B1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[183.625 359.25 184 91.5]
+		fontSize            		12
+		chart               		2
+		treeNode            		[6 0 8 0]
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		8
+		labelString         		"B2/\n"
+						"during:Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=1;"
+		position            		[425 357.75 205.625 91.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[6 0 0 7]
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		9
+		labelString         		"C/"
+		position            		[153.375 569.449 486.125 121.125]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 11 6 12]
+		firstTransition     		29
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		10
+		labelString         		"C1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[192.875 589.699 184 91.5]
+		fontSize            		12
+		chart               		2
+		treeNode            		[9 0 11 0]
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		11
+		labelString         		"C2/\n"
+						"during: Tr3=0;Tr5=0; Tr4=0; Tr6=0;\n"
+						"Tr1=0; Tr2=1;"
+		position            		[424.25 588.574 198.875 94.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[9 0 0 10]
+		visible             		0
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		12
+		labelString         		"D/"
+		position            		[148.125 783.141 489.125 121.125]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 13 9 15]
+		firstTransition     		33
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		13
+		labelString         		"D1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[185.375 803.391 184 91.5]
+		fontSize            		12
+		chart               		2
+		treeNode            		[12 0 0 14]
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		14
+		labelString         		"D2/\n"
+						"during: Tr1=0; Tr5=0;Tr4=0; Tr6=0;\n"
+						"Tr3=0; Tr2=1;"
+		position            		[431 803.766 189.25 92.25]
+		fontSize            		12
+		chart               		2
+		treeNode            		[12 0 13 0]
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		15
+		labelString         		"E/"
+		position            		[143.75 1000.098 489.125 121.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 16 12 18]
+		firstTransition     		22
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		16
+		labelString         		"E1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[183.125 1019.598 184 91.5]
+		fontSize            		12
+		chart               		2
+		treeNode            		[15 0 0 17]
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		17
+		labelString         		"E2/\n"
+						"during: Tr1=0; Tr5=0; Tr6=0; Tr2=0;\n"
+						"Tr3=0; Tr4=1;"
+		position            		[408.625 1020.348 201 90.75]
+		fontSize            		12
+		chart               		2
+		treeNode            		[15 0 16 0]
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		18
+		labelString         		"F/"
+		position            		[151.875 1199.844 485.375 129.375]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 19 15 0]
+		firstTransition     		45
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		19
+		labelString         		"F1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[181.75 1224.594 184 91.5]
+		fontSize            		12
+		chart               		2
+		treeNode            		[18 0 0 20]
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		20
+		labelString         		"F2/\n"
+						"during: Tr1=0; Tr3=0; Tr6=0; Tr2=0;\n"
+						"Tr5=0; Tr4=1;"
+		position            		[410.75 1224.969 205.625 85.875]
+		fontSize            		12
+		chart               		2
+		treeNode            		[18 0 19 0]
+		subviewer           		2
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	transition {
+		id             		21
+		labelString    		"[1]"
+		labelPosition  		[362.85 35.544 15.921 16.849]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0 344.75 22.5 0 0]
+		}
+		dst {
+			id          		3
+			intersection		[1 0 -1 0.4658 377.9082 96.75 0 0]
+		}
+		midPoint       		[366.3667 56.0583]
+		chart          		2
+		linkNode       		[2 0 24]
+		visible        		0
+		dataLimits     		[344.75 380.308 22.5 96.75]
+		subviewer      		2
+	}
+
+	transition {
+		id             		22
+		labelPosition  		[389.314 1062.424 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 397.125 1058.8438 0 0]
+		}
+		dst {
+			id          		16
+			intersection		[2 1 0 0.4289 367.125 1058.8438 0 0]
+		}
+		midPoint       		[389.3137 1062.424]
+		chart          		2
+		linkNode       		[15 0 0]
+		dataLimits     		[367.125 397.125 1055.844 1062.438]
+		subviewer      		2
+	}
+
+	transition {
+		id             		23
+		labelString    		"[IV>IVstar]"
+		labelPosition  		[334.318 234.662 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		4
+			intersection		[3 0 1 0.3982 277.25 211.5 0 0]
+		}
+		dst {
+			id          		5
+			intersection		[3 0 1 0.7325 465.3683 209.3438 0 0]
+		}
+		midPoint       		[377.4396 261.5561]
+		chart          		2
+		linkNode       		[2 44 28]
+		visible        		0
+		dataLimits     		[277.25 467.768 209.344 261.571]
+		subviewer      		2
+	}
+
+	transition {
+		id             		24
+		labelString    		"[IV<IVstar]"
+		labelPosition  		[413.436 65.354 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		5
+			intersection		[1 0 -1 0.1694 441.9373 114.75 0 0]
+		}
+		dst {
+			id          		4
+			intersection		[1 0 -1 0.4996 261.5 113.625 0 0]
+		}
+		midPoint       		[345.8385 64.8652]
+		chart          		2
+		linkNode       		[2 21 44]
+		visible        		0
+		dataLimits     		[259.1 441.937 64.912 114.75]
+		subviewer      		2
+	}
+
+	transition {
+		id             		25
+		labelPosition  		[389.814 387.58 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 397.625 384 0 0]
+		}
+		dst {
+			id          		7
+			intersection		[2 1 0 0.2705 367.625 384 0 0]
+		}
+		midPoint       		[389.8137 387.5802]
+		chart          		2
+		linkNode       		[6 0 0]
+		dataLimits     		[367.625 397.625 381 387.594]
+		subviewer      		2
+	}
+
+	transition {
+		id             		26
+		labelString    		"[IVstar <IV]"
+		labelPosition  		[340.375 474.949 63.684 16.849]
+		fontSize       		12
+		src {
+			id          		7
+			intersection		[3 0 1 0.4137 291.5 450.75 0 0]
+		}
+		dst {
+			id          		8
+			intersection		[3 0 1 0.7447 477.5 449.625 0 0]
+		}
+		midPoint       		[390.5614 500.8245]
+		chart          		2
+		linkNode       		[2 27 32]
+		visible        		0
+		dataLimits     		[291.5 479.9 449.625 500.824]
+		subviewer      		2
+	}
+
+	transition {
+		id             		27
+		labelString    		"[IVstar>IV]"
+		labelPosition  		[427.25 308.074 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		8
+			intersection		[1 0 -1 0.197 465.5 357.75 0 0]
+		}
+		dst {
+			id          		7
+			intersection		[1 0 -1 0.623 298.25 359.25 0 0]
+		}
+		midPoint       		[376.4246 312.553]
+		chart          		2
+		linkNode       		[2 28 26]
+		visible        		0
+		dataLimits     		[295.85 465.5 312.558 359.25]
+		subviewer      		2
+	}
+
+	transition {
+		id             		28
+		labelString    		"[WU==1]"
+		labelPosition  		[227.12 275.776 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		3
+			intersection		[3 0 1 0.7421 269.75 230.625 0 0]
+		}
+		dst {
+			id          		6
+			intersection		[1 0 -1 0.1764 233.75 340.5 0 0]
+		}
+		midPoint       		[250.5768 283.628]
+		chart          		2
+		linkNode       		[2 23 27]
+		visible        		0
+		dataLimits     		[231.35 269.75 230.625 340.5]
+		subviewer      		2
+	}
+
+	transition {
+		id             		29
+		labelPosition  		[399.064 611.655 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 406.875 608.0745 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[2 1 0 0.2008 376.875 608.0745 0 0]
+		}
+		midPoint       		[399.0637 611.6547]
+		chart          		2
+		linkNode       		[9 0 0]
+		dataLimits     		[376.875 406.875 605.074 611.668]
+		subviewer      		2
+	}
+
+	transition {
+		id             		30
+		labelString    		"[IWstar<IW]"
+		labelPosition  		[459.5 700.266 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		10
+			intersection		[3 0 1 0.2724 326.75 681.1995 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[3 0 1 0.7096 482 683.4495 0 0]
+		}
+		midPoint       		[431 719.7657]
+		chart          		2
+		linkNode       		[2 31 36]
+		visible        		0
+		dataLimits     		[326.75 484.4 681.2 720.82]
+		subviewer      		2
+	}
+
+	transition {
+		id             		31
+		labelString    		"[IWstar>IW]"
+		labelPosition  		[419.75 542.766 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		11
+			intersection		[1 0 -1 0.1923 462.5 588.5745 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[1 0 -1 0.752 331.25 589.6995 0 0]
+		}
+		midPoint       		[392.5978 552.1613]
+		chart          		2
+		linkNode       		[2 32 30]
+		visible        		0
+		dataLimits     		[328.85 462.5 552.201 589.699]
+		subviewer      		2
+	}
+
+	transition {
+		id             		32
+		labelString    		"[VW==1]"
+		labelPosition  		[223.375 511.641 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		6
+			intersection		[3 0 1 0.7942 248.75 465.375 0 0]
+		}
+		dst {
+			id          		9
+			intersection		[1 0 -1 0.1916 246.5 569.4495 0 0]
+		}
+		midPoint       		[247.5517 515.4138]
+		chart          		2
+		linkNode       		[2 26 31]
+		visible        		0
+		dataLimits     		[244.1 248.9 465.375 569.449]
+		subviewer      		2
+	}
+
+	transition {
+		id             		33
+		labelPosition  		[390.599 834.307 8.429 16.849]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 399.375 830.7657 0 0]
+		}
+		dst {
+			id          		13
+			intersection		[2 1 0 0.2992 369.375 830.7657 0 0]
+		}
+		midPoint       		[391.5637 834.3459]
+		chart          		2
+		linkNode       		[12 0 0]
+		dataLimits     		[369.375 399.375 828.366 834.351]
+		subviewer      		2
+	}
+
+	transition {
+		id             		34
+		labelString    		"[IWstar<IW]"
+		labelPosition  		[435.5 912.428 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		13
+			intersection		[3 0 1 0.3213 310.25 894.8907 0 0]
+		}
+		dst {
+			id          		14
+			intersection		[3 0 1 0.8137 466.25 896.0157 0 0]
+		}
+		midPoint       		[428 925.9283]
+		chart          		2
+		linkNode       		[2 35 39]
+		dataLimits     		[310.25 468.65 894.891 927.723]
+		subviewer      		2
+	}
+
+	transition {
+		id             		35
+		labelString    		"[IWstar>IW]"
+		labelPosition  		[366.625 754.553 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		14
+			intersection		[1 0 -1 0.1585 461 803.7657 0 0]
+		}
+		dst {
+			id          		13
+			intersection		[1 0 -1 0.8621 344 803.3907 0 0]
+		}
+		midPoint       		[398.6872 770.1104]
+		chart          		2
+		linkNode       		[2 36 34]
+		dataLimits     		[341.6 461 770.106 803.766]
+		subviewer      		2
+	}
+
+	transition {
+		id             		36
+		labelString    		"[UV==1]"
+		labelPosition  		[231.625 724.553 47.763 16.849]
+		fontSize       		12
+		src {
+			id          		9
+			intersection		[3 0 1 0.7961 252.5 690.5745 0 0]
+		}
+		dst {
+			id          		12
+			intersection		[1 0 -1 0.2134 252.5 783.1407 0 0]
+		}
+		midPoint       		[252.5 734.6092]
+		chart          		2
+		linkNode       		[2 30 35]
+		dataLimits     		[250.1 254.9 690.574 783.141]
+		subviewer      		2
+	}
+
+	transition {
+		id             		37
+		labelString    		"[IUstar<IU]"
+		labelPosition  		[466.25 1136.094 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		16
+			intersection		[3 0 1 0.2194 326.75 1111.0983 0 0]
+		}
+		dst {
+			id          		17
+			intersection		[3 0 1 0.5902 491 1111.0983 0 0]
+		}
+		midPoint       		[414.2276 1156.3438]
+		chart          		2
+		linkNode       		[2 38 43]
+		dataLimits     		[326.75 493.4 1111.098 1156.308]
+		subviewer      		2
+	}
+
+	transition {
+		id             		38
+		labelString    		"[IUstar>IU]"
+		labelPosition  		[443 977.844 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		17
+			intersection		[1 0 -1 0.2979 468.5 1020.3483 0 0]
+		}
+		dst {
+			id          		16
+			intersection		[1 0 -1 0.7846 327.5 1019.5983 0 0]
+		}
+		midPoint       		[393.4051 980.5043]
+		chart          		2
+		linkNode       		[2 39 37]
+		dataLimits     		[325.1 468.5 980.546 1020.348]
+		subviewer      		2
+	}
+
+	transition {
+		id             		39
+		labelString    		"[WU==1]"
+		labelPosition  		[236.125 942.969 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		12
+			intersection		[3 0 1 0.7743 258.5 904.2657 0 0]
+		}
+		dst {
+			id          		15
+			intersection		[1 0 -1 0.2346 258.5 1000.0983 0 0]
+		}
+		midPoint       		[258.5 950.0046]
+		chart          		2
+		linkNode       		[2 34 38]
+		dataLimits     		[256.1 260.9 904.266 1000.098]
+		subviewer      		2
+	}
+
+	transition {
+		id             		40
+		labelPosition  		[360.814 164.83 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 368.625 161.25 0 0]
+		}
+		dst {
+			id          		4
+			intersection		[2 1 0 0.4866 338.625 161.25 0 0]
+		}
+		midPoint       		[360.8137 164.8302]
+		chart          		2
+		linkNode       		[3 0 0]
+		dataLimits     		[338.625 368.625 158.25 164.844]
+		subviewer      		2
+	}
+
+	transition {
+		id             		41
+		labelString    		"[IUstar<IU]"
+		labelPosition  		[458 1337.557 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		19
+			intersection		[3 0 1 0.3302 305 1316.0938 0 0]
+		}
+		dst {
+			id          		20
+			intersection		[3 0 1 0.6571 481.25 1310.8438 0 0]
+		}
+		midPoint       		[398.8687 1361.5572]
+		chart          		2
+		linkNode       		[2 42 0]
+		dataLimits     		[305 483.65 1310.844 1361.594]
+		subviewer      		2
+	}
+
+	transition {
+		id             		42
+		labelString    		"[IUstar>IU]"
+		labelPosition  		[425 1178.557 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		20
+			intersection		[1 0 -1 0.2517 462.5 1224.9688 0 0]
+		}
+		dst {
+			id          		19
+			intersection		[1 0 -1 0.6943 309.5 1224.5938 0 0]
+		}
+		midPoint       		[381.014 1182.3306]
+		chart          		2
+		linkNode       		[2 43 41]
+		dataLimits     		[307.1 462.5 1182.385 1224.969]
+		subviewer      		2
+	}
+
+	transition {
+		id             		43
+		labelString    		"[VW==1]"
+		labelPosition  		[248.75 1146.307 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		15
+			intersection		[3 0 1 0.7853 248.75 1121.9733 0 0]
+		}
+		dst {
+			id          		18
+			intersection		[1 0 -1 0.1996 248.75 1199.8438 0 0]
+		}
+		midPoint       		[248.75 1158.3407]
+		chart          		2
+		linkNode       		[2 37 42]
+		dataLimits     		[246.35 251.15 1121.973 1199.844]
+		subviewer      		2
+	}
+
+	transition {
+		id             		44
+		labelString    		"[UV==1]"
+		labelPosition  		[69.977 1211.745 47.763 16.849]
+		fontSize       		12
+		src {
+			id          		18
+			intersection		[4 -1 0 0.5384 151.875 1259.5572 0 0]
+		}
+		dst {
+			id          		3
+			intersection		[4 -1 0 0.5518 135.625 156.75 0 0]
+		}
+		midPoint       		[0 672.2151]
+		chart          		2
+		linkNode       		[2 24 23]
+		dataLimits     		[0 151.875 154.35 1259.557]
+		subviewer      		2
+	}
+
+	transition {
+		id             		45
+		labelPosition  		[387.939 1275.137 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 395.75 1271.5572 0 0]
+		}
+		dst {
+			id          		19
+			intersection		[2 1 0 0.5133 365.75 1271.5572 0 0]
+		}
+		midPoint       		[387.9387 1275.1374]
+		chart          		2
+		linkNode       		[18 0 0]
+		dataLimits     		[365.75 395.75 1268.557 1275.151]
+		subviewer      		2
+	}
+
+	data {
+		id               		46
+		name             		"IU"
+		linkNode         		[2 0 47]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		47
+		name             		"IUstar"
+		linkNode         		[2 46 48]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		48
+		name             		"IV"
+		linkNode         		[2 47 49]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		49
+		name             		"IVstar"
+		linkNode         		[2 48 50]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		50
+		name             		"IW"
+		linkNode         		[2 49 51]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		51
+		name             		"IWstar"
+		linkNode         		[2 50 52]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		52
+		name             		"Tr1"
+		linkNode         		[2 51 53]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		53
+		name             		"Tr2"
+		linkNode         		[2 52 54]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		54
+		name             		"Tr3"
+		linkNode         		[2 53 55]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		55
+		name             		"Tr4"
+		linkNode         		[2 54 56]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		56
+		name             		"Tr5"
+		linkNode         		[2 55 57]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		57
+		name             		"Tr6"
+		linkNode         		[2 56 58]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		58
+		name             		"UV"
+		linkNode         		[2 57 59]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		59
+		name             		"VW"
+		linkNode         		[2 58 60]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		60
+		name             		"WU"
+		linkNode         		[2 59 0]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	instance {
+		id     		61
+		name   		"NEW_CONTROLLER/CONT_LOW"
+		machine		1
+		chart  		2
+	}
+
+	chart {
+		id                       		62
+		name                     		"NEW_CONTROLLER/CONT_UP"
+		windowPosition           		[0 0 768 523.5]
+		viewLimits               		[0 905.625 0 609.375]
+		zoomFactor               		1.25
+		screen                   		[1 1 1024 768 1.333333333333333]
+		treeNode                 		[0 63 0 0]
+		firstTransition          		84
+		viewObj                  		62
+		machine                  		1
+		subviewS {
+		}
+		decomposition            		CLUSTER_CHART
+		firstData                		106
+		updateMethod             		CONTINUOUS
+		sampleTime               		"0.0001"
+		debug                    		[1]
+		chartFileNumber          		2
+	}
+
+	state {
+		id                  		63
+		labelString         		"A/"
+		position            		[143.75 54.5625 612 136.6875]
+		fontSize            		12
+		chart               		62
+		treeNode            		[62 64 0 66]
+		firstTransition     		105
+		subviewer           		62
+		subviewS {
+			x1        		-11.335
+			y1        		-11.335
+			pos       		[0 0 520.125 133.875]
+		}
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		64
+		labelString         		"A11/\n"
+						"during:Tr1=0;Tr1=0;Tr2=0;Tr3=0;Tr4=0;Tr5=0;\n"
+						"Tr6=0;"
+		position            		[178.2813 77.8126 260.9375 86.25]
+		fontSize            		12
+		chart               		62
+		treeNode            		[63 0 0 65]
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		65
+		labelString         		"A2/\n"
+						"during: Tr1=0; Tr3=0; Tr4=0; Tr2=0; Tr5=1;\n"
+						"Tr6=0;"
+		position            		[484.4667 80.094 240.6006 84.0371]
+		fontSize            		12
+		arrowSize           		10.405
+		chart               		62
+		treeNode            		[63 0 64 0]
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		66
+		labelString         		"B/"
+		position            		[143.75 340.5 510.125 124.875]
+		fontSize            		12
+		chart               		62
+		treeNode            		[62 67 63 69]
+		firstTransition     		85
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		67
+		labelString         		"B1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[183.625 355.9688 190.7188 94.7813]
+		fontSize            		12
+		chart               		62
+		treeNode            		[66 0 0 68]
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		68
+		labelString         		"B2/\n"
+						"during:Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=1; Tr6=0;"
+		position            		[425 357.75 205.625 91.875]
+		fontSize            		12
+		chart               		62
+		treeNode            		[66 0 67 0]
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		69
+		labelString         		"C/"
+		position            		[153.375 569.449 486.125 121.125]
+		fontSize            		12
+		chart               		62
+		treeNode            		[62 71 66 72]
+		firstTransition     		89
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		70
+		labelString         		"C1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[192.875 589.699 184 91.5]
+		fontSize            		12
+		chart               		62
+		treeNode            		[69 0 71 0]
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		71
+		labelString         		"C2/\n"
+						"during: Tr3=0;Tr5=0; Tr4=0; Tr6=0;\n"
+						"Tr1=1; Tr2=0;"
+		position            		[424.25 588.574 198.875 94.875]
+		fontSize            		12
+		chart               		62
+		treeNode            		[69 0 0 70]
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		72
+		labelString         		"D/"
+		position            		[148.125 783.141 489.125 121.125]
+		fontSize            		12
+		chart               		62
+		treeNode            		[62 73 69 75]
+		firstTransition     		93
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		73
+		labelString         		"D1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[185.375 794.4847 192.5938 100.4063]
+		fontSize            		12
+		chart               		62
+		treeNode            		[72 0 0 74]
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		74
+		labelString         		"D2/\n"
+						"during: Tr1=0; Tr5=0;Tr4=0; Tr6=0;\n"
+						"Tr3=1; Tr2=0;"
+		position            		[431 803.766 196.9063 89.9063]
+		fontSize            		12
+		chart               		62
+		treeNode            		[72 0 73 0]
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		75
+		labelString         		"E/"
+		position            		[143.75 1000.098 489.125 121.875]
+		fontSize            		12
+		chart               		62
+		treeNode            		[62 76 72 78]
+		firstTransition     		82
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		76
+		labelString         		"E1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[183.125 1019.598 184 91.5]
+		fontSize            		12
+		chart               		62
+		treeNode            		[75 0 0 77]
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		77
+		labelString         		"E2/\n"
+						"during: Tr1=0; Tr5=0; Tr6=0; Tr2=0;\n"
+						"Tr3=1; Tr4=0;"
+		position            		[408.625 1020.348 201 90.75]
+		fontSize            		12
+		chart               		62
+		treeNode            		[75 0 76 0]
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		78
+		labelString         		"F/"
+		position            		[151.875 1199.844 485.375 129.375]
+		fontSize            		12
+		chart               		62
+		treeNode            		[62 79 75 0]
+		firstTransition     		83
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		79
+		labelString         		"F1/\n"
+						"during: Tr3=0;Tr5=0;Tr4=0;Tr2=0;\n"
+						"Tr1=0; Tr6=0;"
+		position            		[181.75 1224.594 184 91.5]
+		fontSize            		12
+		chart               		62
+		treeNode            		[78 0 0 80]
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	state {
+		id                  		80
+		labelString         		"F2/\n"
+						"during: Tr1=0; Tr3=0; Tr6=0; Tr2=0;\n"
+						"Tr5=1; Tr4=0;"
+		position            		[410.75 1224.969 205.625 85.875]
+		fontSize            		12
+		chart               		62
+		treeNode            		[78 0 79 0]
+		visible             		0
+		subviewer           		62
+		type                		OR_STATE
+		decomposition       		CLUSTER_STATE
+	}
+
+	transition {
+		id             		81
+		labelString    		"[IWstar>IW]"
+		labelPosition  		[447.574 211.974 67.43 16.849]
+		fontSize       		12
+		arrowSize      		10.405
+		src {
+			id          		64
+			intersection		[3 0 1 0.3671 343.4375 164.0626 0 137.7314]
+		}
+		dst {
+			id          		65
+			intersection		[3 0 1 0.6185 576.25 164.1311 0 -133.8019]
+		}
+		midPoint       		[467.4307 227.7338]
+		chart          		62
+		linkNode       		[62 100 88]
+		dataLimits     		[343.438 579.371 164.063 227.701]
+		subviewer      		62
+		drawStyle      		SMART
+		slide {
+			mode          		MIRROR_SLIDE
+			sticky        		BOTH_STICK
+		}
+	}
+
+	transition {
+		id             		82
+		labelPosition  		[389.314 1062.424 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 397.125 1058.8438 0 0]
+		}
+		dst {
+			id          		76
+			intersection		[2 1 0 0.4289 367.125 1058.8438 0 0]
+		}
+		midPoint       		[389.3137 1062.424]
+		chart          		62
+		linkNode       		[75 0 0]
+		dataLimits     		[367.125 397.125 1055.844 1062.438]
+		subviewer      		62
+	}
+
+	transition {
+		id             		83
+		labelPosition  		[387.939 1275.137 8.429 16.849]
+		fontSize       		12
+		arrowSize      		10
+		src {
+			intersection		[0 0 1 0 395.75 1271.5572 0 0]
+		}
+		dst {
+			id          		79
+			intersection		[2 1 0 0.5133 365.75 1271.5572 0 0]
+		}
+		midPoint       		[387.9387 1275.1374]
+		chart          		62
+		linkNode       		[78 0 0]
+		dataLimits     		[365.75 395.75 1268.557 1275.151]
+		subviewer      		62
+	}
+
+	transition {
+		id             		84
+		labelString    		"[IWstar<IW]"
+		labelPosition  		[489.735 23.353 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		65
+			intersection		[1 0 -1 0.1694 525.2244 80.094 0 0]
+		}
+		dst {
+			id          		64
+			intersection		[1 0 -1 0.4899 306.1037 77.8126 0 0]
+		}
+		midPoint       		[415.2589 20.5964]
+		chart          		62
+		linkNode       		[62 0 104]
+		dataLimits     		[303.704 525.224 20.504 80.094]
+		subviewer      		62
+	}
+
+	transition {
+		id             		85
+		labelPosition  		[395.568 385.148 8.429 16.849]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 404.3438 381.6071 0 0]
+		}
+		dst {
+			id          		67
+			intersection		[2 1 0 0.2705 374.3438 381.6071 0 0]
+		}
+		midPoint       		[396.5324 385.1873]
+		chart          		62
+		linkNode       		[66 0 0]
+		dataLimits     		[374.344 404.344 379.207 385.193]
+		subviewer      		62
+	}
+
+	transition {
+		id             		86
+		labelString    		"[IU <IUstar]"
+		labelPosition  		[343.236 473.978 63.684 16.849]
+		fontSize       		12
+		src {
+			id          		67
+			intersection		[3 0 1 0.4137 295.4434 450.75 0 0]
+		}
+		dst {
+			id          		68
+			intersection		[3 0 1 0.7447 477.5 449.625 0 0]
+		}
+		midPoint       		[392.4111 499.7502]
+		chart          		62
+		linkNode       		[62 87 92]
+		dataLimits     		[295.443 479.9 449.625 499.747]
+		subviewer      		62
+	}
+
+	transition {
+		id             		87
+		labelString    		"[IU>IUstar]"
+		labelPosition  		[428.741 308.357 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		68
+			intersection		[1 0 -1 0.197 465.5 357.75 0 0]
+		}
+		dst {
+			id          		67
+			intersection		[1 0 -1 0.623 302.4428 355.9688 0 0]
+		}
+		midPoint       		[379.5496 311.9665]
+		chart          		62
+		linkNode       		[62 88 86]
+		dataLimits     		[300.043 465.5 312.012 357.75]
+		subviewer      		62
+	}
+
+	transition {
+		id             		88
+		labelString    		"[WU==1]"
+		labelPosition  		[243.658 294.063 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		63
+			intersection		[3 0 1 0.7421 301.5848 191.25 0 0]
+		}
+		dst {
+			id          		66
+			intersection		[1 0 -1 0.1764 233.75 340.5 0 0]
+		}
+		midPoint       		[266.315 262.9659]
+		chart          		62
+		linkNode       		[62 81 87]
+		dataLimits     		[231.35 301.585 191.25 340.5]
+		subviewer      		62
+	}
+
+	transition {
+		id             		89
+		labelPosition  		[399.064 611.655 8.429 16.849]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 406.875 608.0745 0 0]
+		}
+		dst {
+			id          		70
+			intersection		[2 1 0 0.2008 376.875 608.0745 0 0]
+		}
+		midPoint       		[399.0637 611.6547]
+		chart          		62
+		linkNode       		[69 0 0]
+		dataLimits     		[376.875 406.875 605.074 611.668]
+		subviewer      		62
+	}
+
+	transition {
+		id             		90
+		labelString    		"[IUstar>IU]"
+		labelPosition  		[459.5 700.266 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		70
+			intersection		[3 0 1 0.2724 326.75 681.1995 0 0]
+		}
+		dst {
+			id          		71
+			intersection		[3 0 1 0.7096 482 683.4495 0 0]
+		}
+		midPoint       		[431 719.7657]
+		chart          		62
+		linkNode       		[62 91 96]
+		visible        		0
+		dataLimits     		[326.75 484.4 681.2 720.82]
+		subviewer      		62
+	}
+
+	transition {
+		id             		91
+		labelString    		"[IUstar<IU]"
+		labelPosition  		[419.75 542.766 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		71
+			intersection		[1 0 -1 0.1923 462.5 588.5745 0 0]
+		}
+		dst {
+			id          		70
+			intersection		[1 0 -1 0.752 331.25 589.6995 0 0]
+		}
+		midPoint       		[392.5978 552.1613]
+		chart          		62
+		linkNode       		[62 92 90]
+		dataLimits     		[328.85 462.5 552.201 589.699]
+		subviewer      		62
+	}
+
+	transition {
+		id             		92
+		labelString    		"[VW==1]"
+		labelPosition  		[223.375 511.641 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		66
+			intersection		[3 0 1 0.7942 248.75 465.375 0 0]
+		}
+		dst {
+			id          		69
+			intersection		[1 0 -1 0.1916 246.5 569.4495 0 0]
+		}
+		midPoint       		[247.5517 515.4138]
+		chart          		62
+		linkNode       		[62 86 91]
+		dataLimits     		[244.1 248.9 465.375 569.449]
+		subviewer      		62
+	}
+
+	transition {
+		id             		93
+		labelPosition  		[399.193 828.068 8.429 16.849]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 407.9688 824.5263 0 0]
+		}
+		dst {
+			id          		73
+			intersection		[2 1 0 0.2992 377.9688 824.5263 0 0]
+		}
+		midPoint       		[400.1574 828.1065]
+		chart          		62
+		linkNode       		[72 0 0]
+		dataLimits     		[377.969 407.969 822.126 828.112]
+		subviewer      		62
+	}
+
+	transition {
+		id             		94
+		labelString    		"[IV<IVstar]"
+		labelPosition  		[437.873 909.769 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		73
+			intersection		[3 0 1 0.3213 316.0884 894.891 0 0]
+		}
+		dst {
+			id          		74
+			intersection		[3 0 1 0.8137 467.6836 893.6722 0 0]
+		}
+		midPoint       		[430.961 923.3039]
+		chart          		62
+		linkNode       		[62 95 99]
+		visible        		0
+		dataLimits     		[316.088 470.084 893.672 925.5]
+		subviewer      		62
+	}
+
+	transition {
+		id             		95
+		labelString    		"[IV>IVstar]"
+		labelPosition  		[372.355 752.918 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		74
+			intersection		[1 0 -1 0.1585 462.2096 803.766 0 0]
+		}
+		dst {
+			id          		73
+			intersection		[1 0 -1 0.8621 351.4101 794.4847 0 0]
+		}
+		midPoint       		[405.7515 767.1321]
+		chart          		62
+		linkNode       		[62 96 94]
+		visible        		0
+		dataLimits     		[349.01 462.21 766.442 803.766]
+		subviewer      		62
+	}
+
+	transition {
+		id             		96
+		labelString    		"[UV==1]"
+		labelPosition  		[231.625 724.553 47.763 16.849]
+		fontSize       		12
+		src {
+			id          		69
+			intersection		[3 0 1 0.7961 252.5 690.5745 0 0]
+		}
+		dst {
+			id          		72
+			intersection		[1 0 -1 0.2134 252.5 783.1407 0 0]
+		}
+		midPoint       		[252.5 734.6092]
+		chart          		62
+		linkNode       		[62 90 95]
+		visible        		0
+		dataLimits     		[250.1 254.9 690.574 783.141]
+		subviewer      		62
+	}
+
+	transition {
+		id             		97
+		labelString    		"[IVstar>IV]"
+		labelPosition  		[466.25 1136.094 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		76
+			intersection		[3 0 1 0.2194 326.75 1111.0983 0 0]
+		}
+		dst {
+			id          		77
+			intersection		[3 0 1 0.5902 491 1111.0983 0 0]
+		}
+		midPoint       		[414.2276 1156.3438]
+		chart          		62
+		linkNode       		[62 98 103]
+		visible        		0
+		dataLimits     		[326.75 493.4 1111.098 1156.308]
+		subviewer      		62
+	}
+
+	transition {
+		id             		98
+		labelString    		"[IVstar<IV]"
+		labelPosition  		[443 977.844 59.938 16.849]
+		fontSize       		12
+		src {
+			id          		77
+			intersection		[1 0 -1 0.2979 468.5 1020.3483 0 0]
+		}
+		dst {
+			id          		76
+			intersection		[1 0 -1 0.7846 327.5 1019.5983 0 0]
+		}
+		midPoint       		[393.4051 980.5043]
+		chart          		62
+		linkNode       		[62 99 97]
+		visible        		0
+		dataLimits     		[325.1 468.5 980.546 1020.348]
+		subviewer      		62
+	}
+
+	transition {
+		id             		99
+		labelString    		"[WU==1]"
+		labelPosition  		[236.125 942.969 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		72
+			intersection		[3 0 1 0.7743 258.5 904.2657 0 0]
+		}
+		dst {
+			id          		75
+			intersection		[1 0 -1 0.2346 258.5 1000.0983 0 0]
+		}
+		midPoint       		[258.5 950.0046]
+		chart          		62
+		linkNode       		[62 94 98]
+		visible        		0
+		dataLimits     		[256.1 260.9 904.266 1000.098]
+		subviewer      		62
+	}
+
+	transition {
+		id             		100
+		labelString    		"[UV==1]"
+		labelPosition  		[69.333 1210.851 47.763 16.849]
+		fontSize       		12
+		src {
+			id          		78
+			intersection		[4 -1 0 0.5384 151.875 1259.5572 0 0]
+		}
+		dst {
+			id          		63
+			intersection		[4 -1 0 0.5518 143.75 115.8259 0 0]
+		}
+		midPoint       		[18.1062 649.7982]
+		chart          		62
+		linkNode       		[62 104 81]
+		dataLimits     		[12.768 151.875 113.426 1259.557]
+		subviewer      		62
+	}
+
+	transition {
+		id             		101
+		labelString    		"[IW<IWstar]"
+		labelPosition  		[458 1337.557 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		79
+			intersection		[3 0 1 0.3302 305 1316.0938 0 0]
+		}
+		dst {
+			id          		80
+			intersection		[3 0 1 0.6571 481.25 1310.8438 0 0]
+		}
+		midPoint       		[398.8687 1361.5572]
+		chart          		62
+		linkNode       		[62 102 0]
+		visible        		0
+		dataLimits     		[305 483.65 1310.844 1361.594]
+		subviewer      		62
+	}
+
+	transition {
+		id             		102
+		labelString    		"[IW>IWstar]"
+		labelPosition  		[425 1178.557 67.43 16.849]
+		fontSize       		12
+		src {
+			id          		80
+			intersection		[1 0 -1 0.2517 462.5 1224.9688 0 0]
+		}
+		dst {
+			id          		79
+			intersection		[1 0 -1 0.6943 309.5 1224.5938 0 0]
+		}
+		midPoint       		[381.014 1182.3306]
+		chart          		62
+		linkNode       		[62 103 101]
+		visible        		0
+		dataLimits     		[307.1 462.5 1182.385 1224.969]
+		subviewer      		62
+	}
+
+	transition {
+		id             		103
+		labelString    		"[VW==1]"
+		labelPosition  		[248.75 1146.307 51.509 16.849]
+		fontSize       		12
+		src {
+			id          		75
+			intersection		[3 0 1 0.7853 248.75 1121.9733 0 0]
+		}
+		dst {
+			id          		78
+			intersection		[1 0 -1 0.1996 248.75 1199.8438 0 0]
+		}
+		midPoint       		[248.75 1158.3407]
+		chart          		62
+		linkNode       		[62 97 102]
+		visible        		0
+		dataLimits     		[246.35 251.15 1121.973 1199.844]
+		subviewer      		62
+	}
+
+	transition {
+		id             		104
+		labelString    		"[1]"
+		labelPosition  		[245.313 35.932 15.921 16.849]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 245.3125 24.5625 0 0]
+		}
+		dst {
+			id          		63
+			intersection		[1 0 -1 0.166 245.3125 54.5625 0 0]
+		}
+		midPoint       		[245.3125 34.8888]
+		chart          		62
+		linkNode       		[62 84 100]
+		dataLimits     		[242.912 247.713 24.563 54.563]
+		subviewer      		62
+		drawStyle      		SMART
+	}
+
+	transition {
+		id             		105
+		labelPosition  		[457.849 120 8.438 16.875]
+		fontSize       		12
+		src {
+			intersection		[0 -1 0 0 469.2188 120 0 0]
+		}
+		dst {
+			id          		64
+			intersection		[2 1 0 0.4891 439.2188 120 0 0]
+		}
+		midPoint       		[458.8925 120]
+		chart          		62
+		linkNode       		[63 0 0]
+		dataLimits     		[439.219 469.219 117.6 122.4]
+		subviewer      		62
+		drawStyle      		SMART
+	}
+
+	data {
+		id               		106
+		name             		"IU"
+		linkNode         		[62 0 107]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		107
+		name             		"IUstar"
+		linkNode         		[62 106 108]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		108
+		name             		"IV"
+		linkNode         		[62 107 109]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		109
+		name             		"IVstar"
+		linkNode         		[62 108 110]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		110
+		name             		"IW"
+		linkNode         		[62 109 111]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		111
+		name             		"IWstar"
+		linkNode         		[62 110 112]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		112
+		name             		"Tr1"
+		linkNode         		[62 111 113]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		113
+		name             		"Tr2"
+		linkNode         		[62 112 114]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		114
+		name             		"Tr3"
+		linkNode         		[62 113 115]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		115
+		name             		"Tr4"
+		linkNode         		[62 114 116]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		116
+		name             		"Tr5"
+		linkNode         		[62 115 117]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		117
+		name             		"Tr6"
+		linkNode         		[62 116 118]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		118
+		name             		"UV"
+		linkNode         		[62 117 119]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		119
+		name             		"VW"
+		linkNode         		[62 118 120]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	data {
+		id               		120
+		name             		"WU"
+		linkNode         		[62 119 0]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		6
+		}
+		dlgFixptMode     		0
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+		debug            		[1]
+	}
+
+	instance {
+		id     		121
+		name   		"NEW_CONTROLLER/CONT_UP"
+		machine		1
+		chart  		62
+	}
+
+	target {
+		id               		122
+		name             		"sfun"
+		description      		"Default Simulink S-Function Target."
+		machine          		1
+		linkNode         		[1 0 0]
+	}
+}
